@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 /*
-Questão 2 da prova de ICC
+Questão 6 da prova de ICC
 Aluno: João Vitor Martins da Silva
 nUSP: 13696641
 */
@@ -29,12 +28,10 @@ int main (){
     int vetorA[1000],vetorB[1000],*vetorC;
 
     vetorC=(int *)malloc(2000*sizeof(int));
-
-    srand(time(NULL));
     for(int i=0;i<1000;i++)
-        vetorA[i]=rand () % 1000;
+        scanf("%d",&vetorA[i]);
     for(int i=0;i<1000;i++)
-        vetorB[i]=rand () % 1000;
+        scanf("%d",&vetorB[i]);
     vetorC=ordena(vetorA,vetorB);
 
     for(int i=0;i<2000;i++)
